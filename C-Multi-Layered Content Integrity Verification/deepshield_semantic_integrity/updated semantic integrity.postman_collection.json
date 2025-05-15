@@ -1,0 +1,925 @@
+{
+	"info": {
+		"_postman_id": "20a7d148-5908-44e6-b1fa-eb59079746ea",
+		"name": "semantic integrity",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44677359"
+	},
+	"item": [
+		{
+			"name": "requests_pending_semantic_integrity",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Api-Key",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://deepshield.secublox.com/api/requests_pending_semantic_integrity",
+					"protocol": "https",
+					"host": [
+						"deepshield",
+						"secublox",
+						"com"
+					],
+					"path": [
+						"api",
+						"requests_pending_semantic_integrity"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "All requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/requests_pending_semantic_integrity",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"requests_pending_semantic_integrity"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:36:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2914"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 7,\n    \"next\": null,\n    \"previous\": null,\n    \"current_page\": 1,\n    \"page_size\": 10,\n    \"results\": [\n        {\n            \"id\": 38,\n            \"created_at\": \"2025-05-08T08:16:32.196287Z\",\n            \"updated_at\": \"2025-05-08T13:09:34.834058Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/iabgaccounimage_lj1rpJL.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/iabgaccounimage.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 530,\n            \"user\": 30\n        },\n        {\n            \"id\": 37,\n            \"created_at\": \"2025-05-08T07:34:10.573695Z\",\n            \"updated_at\": \"2025-05-08T13:35:38.785258Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_XDIYMx7.jpeg\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_95wvC8f.jpeg\",\n            \"overall_prediction\": false,\n            \"confidence_score\": \"-100\",\n            \"status\": \"running\",\n            \"image_obj\": 526,\n            \"user\": 6\n        },\n        {\n            \"id\": 32,\n            \"created_at\": \"2025-05-07T17:18:18.399137Z\",\n            \"updated_at\": \"2025-05-08T10:37:01.571671Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/deep_fake_r01Qocg.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/deep_fake_r01Qocgwatermark.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 520,\n            \"user\": 6\n        },\n        {\n            \"id\": 26,\n            \"created_at\": \"2025-04-29T07:08:26.542396Z\",\n            \"updated_at\": \"2025-05-05T12:31:52.428628Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/dackel_AI12_sDW2Y4y.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/dackel_AI12_sDW2Y4ywatermark.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 30\n        },\n        {\n            \"id\": 21,\n            \"created_at\": \"2025-04-24T12:19:36.298303Z\",\n            \"updated_at\": \"2025-05-05T12:32:15.860594Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_M3nsoAL.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_fXjgiaR.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 7\n        },\n        {\n            \"id\": 20,\n            \"created_at\": \"2025-04-24T12:14:08.914879Z\",\n            \"updated_at\": \"2025-04-29T06:52:01.934182Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_PIbXeT2.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_d2lWlwQ.png\",\n            \"overall_prediction\": false,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 5\n        },\n        {\n            \"id\": 7,\n            \"created_at\": \"2025-04-22T07:26:37.312006Z\",\n            \"updated_at\": \"2025-04-23T06:42:45.870799Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/watermarked_image_FPGA_device_original.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/watermarked_image_FPGA_device_original_1a3V5fx.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 7\n        }\n    ]\n}"
+				},
+				{
+					"name": "processed requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/requests_pending_semantic_integrity?status=processed",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"requests_pending_semantic_integrity"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "processed"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:38:05 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2465"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 6,\n    \"next\": null,\n    \"previous\": null,\n    \"current_page\": 1,\n    \"page_size\": 10,\n    \"results\": [\n        {\n            \"id\": 38,\n            \"created_at\": \"2025-05-08T08:16:32.196287Z\",\n            \"updated_at\": \"2025-05-08T13:09:34.834058Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/iabgaccounimage_lj1rpJL.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/iabgaccounimage.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 530,\n            \"user\": 30\n        },\n        {\n            \"id\": 32,\n            \"created_at\": \"2025-05-07T17:18:18.399137Z\",\n            \"updated_at\": \"2025-05-08T10:37:01.571671Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/deep_fake_r01Qocg.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/deep_fake_r01Qocgwatermark.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 520,\n            \"user\": 6\n        },\n        {\n            \"id\": 26,\n            \"created_at\": \"2025-04-29T07:08:26.542396Z\",\n            \"updated_at\": \"2025-05-05T12:31:52.428628Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/dackel_AI12_sDW2Y4y.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/dackel_AI12_sDW2Y4ywatermark.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 30\n        },\n        {\n            \"id\": 21,\n            \"created_at\": \"2025-04-24T12:19:36.298303Z\",\n            \"updated_at\": \"2025-05-05T12:32:15.860594Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_M3nsoAL.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_fXjgiaR.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 7\n        },\n        {\n            \"id\": 20,\n            \"created_at\": \"2025-04-24T12:14:08.914879Z\",\n            \"updated_at\": \"2025-04-29T06:52:01.934182Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_PIbXeT2.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/QmXtpU_d2lWlwQ.png\",\n            \"overall_prediction\": false,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 5\n        },\n        {\n            \"id\": 7,\n            \"created_at\": \"2025-04-22T07:26:37.312006Z\",\n            \"updated_at\": \"2025-04-23T06:42:45.870799Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/watermarked_image_FPGA_device_original.png\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/watermarked_image_FPGA_device_original_1a3V5fx.png\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"processed\",\n            \"image_obj\": 516,\n            \"user\": 7\n        }\n    ]\n}"
+				},
+				{
+					"name": "failed requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/requests_pending_semantic_integrity?status=failed",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"requests_pending_semantic_integrity"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "failed"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:39:35 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "528"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"current_page\": 1,\n    \"page_size\": 10,\n    \"results\": [\n        {\n            \"id\": 37,\n            \"created_at\": \"2025-05-08T07:34:10.573695Z\",\n            \"updated_at\": \"2025-05-08T13:39:27.576679Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_XDIYMx7.jpeg\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_95wvC8f.jpeg\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"failed\",\n            \"image_obj\": 526,\n            \"user\": 6\n        }\n    ]\n}"
+				},
+				{
+					"name": "pending requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/requests_pending_semantic_integrity?status=pending",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"requests_pending_semantic_integrity"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "pending"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:40:31 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "529"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"current_page\": 1,\n    \"page_size\": 10,\n    \"results\": [\n        {\n            \"id\": 37,\n            \"created_at\": \"2025-05-08T07:34:10.573695Z\",\n            \"updated_at\": \"2025-05-08T13:40:27.194209Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_XDIYMx7.jpeg\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_95wvC8f.jpeg\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"pending\",\n            \"image_obj\": 526,\n            \"user\": 6\n        }\n    ]\n}"
+				},
+				{
+					"name": "running requests",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/requests_pending_semantic_integrity?status=running",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"requests_pending_semantic_integrity"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "running"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:41:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "529"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"current_page\": 1,\n    \"page_size\": 10,\n    \"results\": [\n        {\n            \"id\": 37,\n            \"created_at\": \"2025-05-08T07:34:10.573695Z\",\n            \"updated_at\": \"2025-05-08T13:41:02.247726Z\",\n            \"is_soft_deleted\": false,\n            \"image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_XDIYMx7.jpeg\",\n            \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_95wvC8f.jpeg\",\n            \"overall_prediction\": true,\n            \"confidence_score\": null,\n            \"status\": \"running\",\n            \"image_obj\": 526,\n            \"user\": 6\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "semantic_integrity_results",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Api-Key",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"overall_prediction\": false,\n    \"confidence_score\":-100\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deepshield.secublox.com/api/semantic_integrity_results/37",
+					"protocol": "https",
+					"host": [
+						"deepshield",
+						"secublox",
+						"com"
+					],
+					"path": [
+						"api",
+						"semantic_integrity_results",
+						"37"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "prediction processed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"overall_prediction\": true,\n    \"confidence_score\":100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/semantic_integrity_results/37",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"semantic_integrity_results",
+								"37"
+							]
+						}
+					},
+					"status": "Reset Content",
+					"code": 205,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:30:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "469"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Semantic integrity result updated successfully.\",\n    \"data\": {\n        \"id\": 37,\n        \"created_at\": \"2025-05-08T07:34:10.573695Z\",\n        \"updated_at\": \"2025-05-08T13:30:12.363339Z\",\n        \"is_soft_deleted\": false,\n        \"image\": \"/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_XDIYMx7.jpeg\",\n        \"watermark_image\": \"/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_95wvC8f.jpeg\",\n        \"overall_prediction\": true,\n        \"confidence_score\": \"100\",\n        \"status\": \"running\",\n        \"image_obj\": 526,\n        \"user\": 6\n    }\n}"
+				},
+				{
+					"name": "prediction failed",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"overall_prediction\": false,\n    \"confidence_score\":-100\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/semantic_integrity_results/37",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"semantic_integrity_results",
+								"37"
+							]
+						}
+					},
+					"status": "Reset Content",
+					"code": 205,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 13:35:38 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "531"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "POST, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Semantic integrity result updated successfully.\",\n    \"data\": {\n        \"id\": 37,\n        \"created_at\": \"2025-05-08T07:34:10.573695Z\",\n        \"updated_at\": \"2025-05-08T13:35:38.785258Z\",\n        \"is_soft_deleted\": false,\n        \"image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_XDIYMx7.jpeg\",\n        \"watermark_image\": \"http://deepshield.secublox.com/media/sim_images/WhatsApp_Image_2025-03-27_at_4.03.11_PM_95wvC8f.jpeg\",\n        \"overall_prediction\": false,\n        \"confidence_score\": \"-100\",\n        \"status\": \"running\",\n        \"image_obj\": 526,\n        \"user\": 6\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "semantic_integrity_status",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "headerPrefix",
+							"value": "Api-Key",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"running\"\n}\n\n //running, processed, failed ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://deepshield.secublox.com/api/semantic_integrity_status/37",
+					"protocol": "https",
+					"host": [
+						"deepshield",
+						"secublox",
+						"com"
+					],
+					"path": [
+						"api",
+						"semantic_integrity_status",
+						"37"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "status pending to running",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"running\"\n}\n\n //running, processed, failed ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/semantic_integrity_status/32",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"semantic_integrity_status",
+								"32"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 10:36:30 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "84"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Status updated successfully.\",\n    \"data\": {\n        \"status\": \"running\"\n    }\n}"
+				},
+				{
+					"name": "status running to processed",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"processed\"\n}\n\n //running, processed, failed ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/semantic_integrity_status/32",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"semantic_integrity_status",
+								"32"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 10:37:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "86"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Status updated successfully.\",\n    \"data\": {\n        \"status\": \"processed\"\n    }\n}"
+				},
+				{
+					"name": "status running to failed",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"failed\"\n}\n\n //running, processed, failed ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://deepshield.secublox.com/api/semantic_integrity_status/37",
+							"protocol": "https",
+							"host": [
+								"deepshield",
+								"secublox",
+								"com"
+							],
+							"path": [
+								"api",
+								"semantic_integrity_status",
+								"37"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.24.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 08 May 2025 10:38:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Content-Length",
+							"value": "83"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, origin"
+						},
+						{
+							"key": "Allow",
+							"value": "PUT, PATCH, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"message\": \"Status updated successfully.\",\n    \"data\": {\n        \"status\": \"failed\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

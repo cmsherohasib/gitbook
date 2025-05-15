@@ -1,0 +1,3 @@
+demos/data/1_candidate.jpg, demos/data/1_watermarked.jpg, pending
+demos/data/2_watermarked.jpg, demos/data/2_watermarked.jpg, pending
+demos/data/3_watermarked.jpg, demos/data/3_watermarked.jpg, pending
